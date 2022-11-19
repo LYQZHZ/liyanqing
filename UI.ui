@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1117</width>
+    <height>683</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1117</width>
+    <height>683</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1117</width>
+    <height>683</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>picture/icon.png</normaloff>picture/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>文件路径：</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="wenjianlujingxianshikuang">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>441</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255, 255, 100);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>211</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>各项结果显示：</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="yuyinshibiejieguoxianshikuang">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>521</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255, 255, 100);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yuyinshibieanniu">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>10</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>🤖语音识别🤖</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>190</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>🔉语音合成🔉</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>70</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>👨性别分析👩</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>130</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>📉句子级评测分析📈</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="yusutiaojietiao">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>370</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>320</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>语音合成参数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>370</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>语速：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>430</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>发言人：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="fayanrenlan">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>430</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimumContentsLength">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>x3_doudou</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x3_panting</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>xiaoyan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aisjiuxu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aisxping</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="yusuzhi">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>370</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>50</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>530</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>评测语种：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>590</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>年龄类型：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="yuzhonglan">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>530</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>cn_vip</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>en_vip</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="nianlingleixinglan">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>590</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>adult</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>pupil</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>490</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>中英句子评测参数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>机器翻译参数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>源语种：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="yuanyuzhongxialalan">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>370</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>汉语普通话</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>英语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>日语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>俄语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>丹麦语</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>370</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>目标语种：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="mubiaoyuzhongxialalan">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>370</y>
+      <width>111</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>英语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>汉语普通话</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>日语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>俄语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>丹麦语</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="fanyianniu">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>360</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>翻译</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="yuanyuzhongshurukuang">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>410</y>
+      <width>211</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255, 255, 100);</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="mubiaoyuzhongxianshikuang">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>410</y>
+      <width>291</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255,255, 255, 100);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tongshengchuanyianniu">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>10</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>⏺同声传译⏺</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tscyml">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>70</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>📂打开同声传译输出目录📂</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yyhcml">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>250</y>
+      <width>211</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;幼圆&quot;;
+background-image: url(:/picture/bj.jpg);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string>📂打开语音合成输出目录📂</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="beijing">
+    <property name="geometry">
+     <rect>
+      <x>-60</x>
+      <y>-20</y>
+      <width>1611</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/picture/bj2_1261x709.jpg);
+
+</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>1131</width>
+      <height>711</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0, 0, 0,200);</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="tscyyuanyuzhongxialalan">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>180</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>汉语普通话</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>英语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>日语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>丹麦语</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>130</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>同声传译参数：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>180</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>源语种：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>220</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>目标语种：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="tscymubiaoyuzhongxialalan">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>220</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>英语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>汉语普通话</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>日语</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>丹麦语</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>260</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>发言人：</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="tscyfayanrenlan">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>260</y>
+      <width>131</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimumContentsLength">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>x3_doudou</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>x3_panting</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>xiaoyan</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aisjiuxu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>aisxping</string>
+     </property>
+    </item>
+   </widget>
+   <zorder>beijing</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>label</zorder>
+   <zorder>wenjianlujingxianshikuang</zorder>
+   <zorder>label_2</zorder>
+   <zorder>yuyinshibiejieguoxianshikuang</zorder>
+   <zorder>yuyinshibieanniu</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>yusutiaojietiao</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>fayanrenlan</zorder>
+   <zorder>yusuzhi</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>yuzhonglan</zorder>
+   <zorder>nianlingleixinglan</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>yuanyuzhongxialalan</zorder>
+   <zorder>label_11</zorder>
+   <zorder>mubiaoyuzhongxialalan</zorder>
+   <zorder>fanyianniu</zorder>
+   <zorder>yuanyuzhongshurukuang</zorder>
+   <zorder>mubiaoyuzhongxianshikuang</zorder>
+   <zorder>tongshengchuanyianniu</zorder>
+   <zorder>tscyml</zorder>
+   <zorder>yyhcml</zorder>
+   <zorder>tscyyuanyuzhongxialalan</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>tscymubiaoyuzhongxialalan</zorder>
+   <zorder>label_15</zorder>
+   <zorder>tscyfayanrenlan</zorder>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>yuyinshibieanniu</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>yuyinshibie()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>931</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1057</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>yuyinhecheng()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>893</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>825</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>yusutiaojietiao</sender>
+   <signal>actionTriggered(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>yusuzhishezhi(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>363</x>
+     <y>381</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>383</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>xingbienianlingfenxi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>895</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1035</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>juzifenxianniu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>929</x>
+     <y>188</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1041</x>
+     <y>262</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>fanyianniu</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>fanyi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1067</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1067</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tongshengchuanyianniu</sender>
+   <signal>pressed()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tongshengchuanyianxia()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>890</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>831</x>
+     <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tongshengchuanyianniu</sender>
+   <signal>released()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>tongshengchnuayitaiqi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>973</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>972</x>
+     <y>292</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tscyml</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dakaitongshengchuanyimulu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>905</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>913</x>
+     <y>315</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>yyhcml</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dakaiyuyinhechengmulu()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>940</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1062</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dakaiwenjian()</slot>
+  <slot>yuyinshibie()</slot>
+  <slot>yuyinhecheng()</slot>
+  <slot>yusuzhishezhi(int)</slot>
+  <slot>xingbienianlingfenxi()</slot>
+  <slot>juzifenxianniu()</slot>
+  <slot>fanyi()</slot>
+  <slot>tongshengchuanyianxia()</slot>
+  <slot>tongshengchnuayitaiqi()</slot>
+  <slot>dakaitongshengchuanyimulu()</slot>
+  <slot>dakaiyuyinhechengmulu()</slot>
+ </slots>
+</ui>
